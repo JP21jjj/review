@@ -23,4 +23,7 @@ public class Review {
 
     @Column(nullable = false)
     private String description;
+
+    @Column(nullable = false)
+    private long rating;
 }

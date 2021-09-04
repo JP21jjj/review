@@ -150,23 +150,20 @@ paths:
 definitions:
   Review:
     type: "object"
-    required:
-    - "rating"
-    - "title"
-    - "description"
+     required:
+    - "id"
+    - "name"
+    - "publishedAt"
     properties:
       id:
         type: "integer"
         format: "int64"
-      title:
+      name:
         type: "string"
-        example: "Um título de avaliação."
-      description:
-        type: "string"
-        example: "Uma descrição de avaliação."
-      rating:
+        example: "Nome do game."
+      publishedAt:
         type: "integer"
-        description: "Uma nota de avaliação."
+        description: "A data de publicaçao do game."
   GameDTO:
     type: "object"
     required:

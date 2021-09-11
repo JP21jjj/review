@@ -21,7 +21,7 @@ public class GamesController {
     }
 
     @GetMapping("/games/{Id}")
-    public List<GameDTO> getGame(@PathVariable String id){
+    public GameDTO getGame(@PathVariable String id){
         return null;
     }
 
